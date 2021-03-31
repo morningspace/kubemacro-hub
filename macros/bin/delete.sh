@@ -1,6 +1,12 @@
 ##
 # @Name: delete
 # @Description: Delete resource.
+#
+# Delete resource.
+#
+# Reference:
+#   https://kubernetes.io/docs/tasks/run-application/force-delete-stateful-set-pod/
+#
 # @Usage: kubectl macro delete ([-f FILENAME] | [-k DIRECTORY] | TYPE [(NAME | -l label | --all)]) [options]
 # @Options:
 # @Examples:
@@ -12,8 +18,6 @@
 #   kubectl macro delete pod echo --force
 #   # To force delete a resource and clear its finalizers.
 #   kubectl macro delete pod echo --force --no-finalizer -n default
-# @Reference:
-#   https://kubernetes.io/docs/tasks/run-application/force-delete-stateful-set-pod/
 ##
 function delete {
   local args=()

@@ -1,6 +1,9 @@
 ##
 # @Name: get-pod-terminating
 # @Description: Get all pods that are terminating.
+#
+# Get all pods that are terminating.
+#
 # @Usage: kubectl macro get-pod-terminating [options]
 # @Options:
 # @Examples:

@@ -1,12 +1,15 @@
 ##
-# @Dependencies: jq,get-pod-by-svc,delete
 # @Name: delete-pod-by-svc
 # @Description: Delete all pods belonging to a service.
+#
+# Delete all pods belonging to a service.
+#
 # @Usage: kubectl macro delete-pod-by-svc (NAME) [options]
 # @Options:
 # @Examples:
 #   # Delete pods belonging to service echo in default namespace
 #   kubectl macro delete-pod-by-svc echo -n default
+# @Dependencies: jq,get-pod-by-svc,delete
 ##
 function delete-pod-by-svc {
   local svc=$1

@@ -1,6 +1,15 @@
 ##
 # @Name: get-pod-restarts
-# @Description: Get all pods that restarts number match specified criteria.
+# @Description: Get the pods that the restart number matches specified criteria.
+#
+# This macro can help you find the pods that the restart number matches specified criteria.
+# For example, to list all pods that the restart number is greater than 100 in current namespace:
+# ```shell
+# kubectl macro get-pod-restarts -gt 100
+# ```
+#
+# Usually pods restarted many times indicate that they are not healthy and need your further action.
+#
 # @Usage: kubectl macro get-pod-restarts [options]
 # @Options:
 # @Examples:

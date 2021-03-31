@@ -1,6 +1,9 @@
 ##
 # @Name: get-apires
 # @Description: Get API resources in a namespace.
+#
+# Get API resources in a namespace.
+#
 # @Usage: kubectl macro get-apires [options]
 # @Options:
 # @Examples:

@@ -1,6 +1,9 @@
 ##
 # @Name: delete-apires
 # @Description: Delete API resources in a namespace.
+#
+# Delete API resources in a namespace.
+#
 # @Usage: kubectl macro delete-apires [options]
 # @Options:
 # @Examples:

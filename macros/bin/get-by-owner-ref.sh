@@ -1,6 +1,9 @@
 ##
 # @Name: get-by-owner-ref
 # @Description: Get resources by OwnerReferences.
+#
+# Get resources by OwnerReferences.
+#
 # @Usage: kubectl macro get-by-owner-ref [options]
 # @Options:
 # @Examples:

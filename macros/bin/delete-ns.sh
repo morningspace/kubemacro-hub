@@ -1,15 +1,18 @@
 ##
 # @Name: delete-ns
 # @Description: Delete a namespace.
+#
+# Delete a namespace.
+# Reference:
+#   https://stackoverflow.com/questions/55853312/how-to-force-delete-a-kubernetes-namespace
+#   https://github.com/kubernetes/kubernetes/issues/60807#issuecomment-572615776
+#
 # @Usage: kubectl macro delete-ns (NAME) [options]
 # @Options:
 # @Examples:
 #   # Delete a namespace.
 #   kubectl macro delete-ns foo
 # @Dependencies: tr,sed
-# @Reference:
-#   https://stackoverflow.com/questions/55853312/how-to-force-delete-a-kubernetes-namespace
-#   https://github.com/kubernetes/kubernetes/issues/60807#issuecomment-572615776
 ##
 function delete-ns {
   local ns=$1
