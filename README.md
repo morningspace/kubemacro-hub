@@ -1,3 +1,3 @@
-# KubeMacro Index
+# KubeMacro Hub
 
-Macro index for https://github.com/morningspace/kubemacro.
+Macro repository for https://github.com/morningspace/kubemacro.
