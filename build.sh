@@ -111,8 +111,9 @@ function gen_macro_doc {
 
 function gen_docs {
   # Clean up
-  echo "Clean up directories..."
+  echo "Clean up directories and files..."
   cp /dev/null macros/_sidebar.md
+  cp /dev/null macros/macros.sha256
   rm -rf macros/docs
   mkdir macros/docs
 
@@ -135,6 +136,12 @@ function gen_docs {
     echo "* [${name}](docs/${name}.md)" >> macros/_sidebar.md
     echo "done"
 
+    # Generate the SHA checksum for macro
+    print_step "Generate shasum for ${name}"
+    local shasum=`cat $file | shasum -a 256 | awk '{print $1}'`
+    echo "$shasum $name" >> macros/macros.sha256
+    echo "done"
+    
     (( i++ ))
   done
 
