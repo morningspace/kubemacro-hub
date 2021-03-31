@@ -4,7 +4,7 @@
 #
 # Get all pods that are terminating.
 #
-# @Author: [MorningSpace](https://github.com/morningspace/)
+# @Author: [morningspace](https://github.com/morningspace/)
 # @Usage: kubectl macro get-pod-terminating [options]
 # @Options:
 # @Examples:

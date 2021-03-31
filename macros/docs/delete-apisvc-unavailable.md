@@ -2,7 +2,7 @@
 
 Delete all API services that are unavailable.
 
-Author: [MorningSpace](https://github.com/morningspace/)
+Author: [morningspace](https://github.com/morningspace/)
 
 <!-- tabs:start -->
 
@@ -41,11 +41,13 @@ kubectl macro delete-apisvc-unavailable --dry-run=client
 
 ### **Dependencies**
 
-* awk
+To run this macro, it requires below dependencies to be installed at first:
+
+* `awk`
 
 ### **Code**
 
-?> To install this macro, copy the code into a local file and save as `delete-apisvc-unavailable.sh` in `$HOME/.kubemacro`.
+?> To install this macro, you can download it [here](bin/delete-apisvc-unavailable.sh ':ignore delete-apisvc-unavailable'), or copy the following code into a local file named as `delete-apisvc-unavailable.sh`, then put it in `$HOME/.kubemacro` directory for KubeMacro to pick up.
 
 [filename](../bin/delete-apisvc-unavailable.sh ':include :type=code shell')
 

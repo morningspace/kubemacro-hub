@@ -2,7 +2,7 @@
 
 Delete all pods belonging to a service.
 
-Author: [MorningSpace](https://github.com/morningspace/)
+Author: [morningspace](https://github.com/morningspace/)
 
 <!-- tabs:start -->
 
@@ -36,13 +36,15 @@ kubectl macro delete-pod-by-svc echo -n default
 
 ### **Dependencies**
 
-* jq
+To run this macro, it requires below dependencies to be installed at first:
+
+* `jq`
 * [get-pod-by-svc](docs/get-pod-by-svc.md)
 * [delete-res](docs/delete-res.md)
 
 ### **Code**
 
-?> To install this macro, copy the code into a local file and save as `delete-pod-by-svc.sh` in `$HOME/.kubemacro`.
+?> To install this macro, you can download it [here](bin/delete-pod-by-svc.sh ':ignore delete-pod-by-svc'), or copy the following code into a local file named as `delete-pod-by-svc.sh`, then put it in `$HOME/.kubemacro` directory for KubeMacro to pick up.
 
 [filename](../bin/delete-pod-by-svc.sh ':include :type=code shell')
 

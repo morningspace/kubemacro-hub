@@ -96,11 +96,11 @@ function gen_macro_doc {
           if [[ -f macros/bin/$dep.sh ]]; then
             echo -e "* [$dep](docs/$dep.md)" >> macros/docs/$name.md
           else
-            echo -e "* $dep" >> macros/docs/$name.md
+            echo -e "* \`$dep\`" >> macros/docs/$name.md
           fi
         done
       else
-        echo -e "There is no dependency for this macro." >> macros/docs/$name.md
+        echo -e "n/a" >> macros/docs/$name.md
       fi
       ;;
     *)

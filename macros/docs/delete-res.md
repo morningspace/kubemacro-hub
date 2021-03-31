@@ -2,7 +2,7 @@
 
 Delete resource.
 
-Author: [MorningSpace](https://github.com/morningspace/)
+Author: [morningspace](https://github.com/morningspace/)
 
 <!-- tabs:start -->
 
@@ -45,11 +45,13 @@ kubectl macro delete-res pod echo --force --no-finalizer -n default
 
 ### **Dependencies**
 
-There is no dependency for this macro.
+To run this macro, it requires below dependencies to be installed at first:
+
+n/a
 
 ### **Code**
 
-?> To install this macro, copy the code into a local file and save as `delete-res.sh` in `$HOME/.kubemacro`.
+?> To install this macro, you can download it [here](bin/delete-res.sh ':ignore delete-res'), or copy the following code into a local file named as `delete-res.sh`, then put it in `$HOME/.kubemacro` directory for KubeMacro to pick up.
 
 [filename](../bin/delete-res.sh ':include :type=code shell')
 

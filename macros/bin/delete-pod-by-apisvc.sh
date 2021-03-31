@@ -4,7 +4,7 @@
 #
 # Delete all pods belonging to an API service.
 #
-# @Author: [MorningSpace](https://github.com/morningspace/)
+# @Author: [morningspace](https://github.com/morningspace/)
 # @Usage: kubectl macro delete-pod-by-apisvc (NAME) [options]
 # @Options:
 # @Examples:

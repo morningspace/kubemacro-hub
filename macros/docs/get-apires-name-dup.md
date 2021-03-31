@@ -2,7 +2,7 @@
 
 Get all API resources with names duplicated.
 
-Author: [MorningSpace](https://github.com/morningspace/)
+Author: [morningspace](https://github.com/morningspace/)
 
 <!-- tabs:start -->
 
@@ -34,15 +34,17 @@ Here are some examples that you can take as reference to understand how to use t
 
 ### **Dependencies**
 
-* sort
-* head
-* awk
-* uniq
-* grep
+To run this macro, it requires below dependencies to be installed at first:
+
+* `sort`
+* `head`
+* `awk`
+* `uniq`
+* `grep`
 
 ### **Code**
 
-?> To install this macro, copy the code into a local file and save as `get-apires-name-dup.sh` in `$HOME/.kubemacro`.
+?> To install this macro, you can download it [here](bin/get-apires-name-dup.sh ':ignore get-apires-name-dup'), or copy the following code into a local file named as `get-apires-name-dup.sh`, then put it in `$HOME/.kubemacro` directory for KubeMacro to pick up.
 
 [filename](../bin/get-apires-name-dup.sh ':include :type=code shell')
 

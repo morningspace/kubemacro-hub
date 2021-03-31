@@ -2,7 +2,7 @@
 
 Delete a namespace.
 
-Author: [MorningSpace](https://github.com/morningspace/)
+Author: [morningspace](https://github.com/morningspace/)
 
 <!-- tabs:start -->
 
@@ -40,12 +40,14 @@ kubectl macro delete-ns foo
 
 ### **Dependencies**
 
-* tr
-* sed
+To run this macro, it requires below dependencies to be installed at first:
+
+* `tr`
+* `sed`
 
 ### **Code**
 
-?> To install this macro, copy the code into a local file and save as `delete-ns.sh` in `$HOME/.kubemacro`.
+?> To install this macro, you can download it [here](bin/delete-ns.sh ':ignore delete-ns'), or copy the following code into a local file named as `delete-ns.sh`, then put it in `$HOME/.kubemacro` directory for KubeMacro to pick up.
 
 [filename](../bin/delete-ns.sh ':include :type=code shell')
 

@@ -2,7 +2,7 @@
 
 Get resources by OwnerReferences.
 
-Author: [MorningSpace](https://github.com/morningspace/)
+Author: [morningspace](https://github.com/morningspace/)
 
 <!-- tabs:start -->
 
@@ -38,11 +38,13 @@ kubectl macro get-by-owner-ref pod -l 'app=echo'
 
 ### **Dependencies**
 
-* jq
+To run this macro, it requires below dependencies to be installed at first:
+
+* `jq`
 
 ### **Code**
 
-?> To install this macro, copy the code into a local file and save as `get-by-owner-ref.sh` in `$HOME/.kubemacro`.
+?> To install this macro, you can download it [here](bin/get-by-owner-ref.sh ':ignore get-by-owner-ref'), or copy the following code into a local file named as `get-by-owner-ref.sh`, then put it in `$HOME/.kubemacro` directory for KubeMacro to pick up.
 
 [filename](../bin/get-by-owner-ref.sh ':include :type=code shell')
 

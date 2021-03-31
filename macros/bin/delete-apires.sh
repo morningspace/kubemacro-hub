@@ -4,7 +4,7 @@
 #
 # Delete API resources in a namespace.
 #
-# @Author: [MorningSpace](https://github.com/morningspace/)
+# @Author: [morningspace](https://github.com/morningspace/)
 # @Usage: kubectl macro delete-apires [options]
 # @Options:
 # @Examples:

@@ -2,7 +2,7 @@
 
 Delete API resources in a namespace.
 
-Author: [MorningSpace](https://github.com/morningspace/)
+Author: [morningspace](https://github.com/morningspace/)
 
 <!-- tabs:start -->
 
@@ -39,12 +39,14 @@ kubectl macro delete-apires --include '^service' --exclude '.*coreos.*|account'
 
 ### **Dependencies**
 
+To run this macro, it requires below dependencies to be installed at first:
+
 * [get-apires](docs/get-apires.md)
 * [delete-res](docs/delete-res.md)
 
 ### **Code**
 
-?> To install this macro, copy the code into a local file and save as `delete-apires.sh` in `$HOME/.kubemacro`.
+?> To install this macro, you can download it [here](bin/delete-apires.sh ':ignore delete-apires'), or copy the following code into a local file named as `delete-apires.sh`, then put it in `$HOME/.kubemacro` directory for KubeMacro to pick up.
 
 [filename](../bin/delete-apires.sh ':include :type=code shell')
 

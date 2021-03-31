@@ -7,7 +7,7 @@
 # Reference:
 # - https://kubernetes.io/docs/tasks/run-application/force-delete-stateful-set-pod/
 #
-# @Author: [MorningSpace](https://github.com/morningspace/)
+# @Author: [morningspace](https://github.com/morningspace/)
 # @Usage: kubectl macro delete-res ([-f FILENAME] | [-k DIRECTORY] | TYPE [(NAME | -l label | --all)]) [options]
 # @Options:
 # @Examples:

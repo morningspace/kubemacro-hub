@@ -2,7 +2,7 @@
 
 Get all pods belonging to a service.
 
-Author: [MorningSpace](https://github.com/morningspace/)
+Author: [morningspace](https://github.com/morningspace/)
 
 <!-- tabs:start -->
 
@@ -42,11 +42,13 @@ kubectl macro get-pod-by-svc echo -o name | xargs -t kubectl describe
 
 ### **Dependencies**
 
-* jq
+To run this macro, it requires below dependencies to be installed at first:
+
+* `jq`
 
 ### **Code**
 
-?> To install this macro, copy the code into a local file and save as `get-pod-by-svc.sh` in `$HOME/.kubemacro`.
+?> To install this macro, you can download it [here](bin/get-pod-by-svc.sh ':ignore get-pod-by-svc'), or copy the following code into a local file named as `get-pod-by-svc.sh`, then put it in `$HOME/.kubemacro` directory for KubeMacro to pick up.
 
 [filename](../bin/get-pod-by-svc.sh ':include :type=code shell')
 

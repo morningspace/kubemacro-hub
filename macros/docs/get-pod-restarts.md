@@ -2,7 +2,7 @@
 
 Get the pods that the restart number matches specified criteria.
 
-Author: [MorningSpace](https://github.com/morningspace/)
+Author: [morningspace](https://github.com/morningspace/)
 
 <!-- tabs:start -->
 
@@ -50,11 +50,13 @@ kubectl macro get-pod-restarts -l 'app=echo' -eq 0
 
 ### **Dependencies**
 
+To run this macro, it requires below dependencies to be installed at first:
+
 * [get-pod-not-ready](docs/get-pod-not-ready.md)
 
 ### **Code**
 
-?> To install this macro, copy the code into a local file and save as `get-pod-restarts.sh` in `$HOME/.kubemacro`.
+?> To install this macro, you can download it [here](bin/get-pod-restarts.sh ':ignore get-pod-restarts'), or copy the following code into a local file named as `get-pod-restarts.sh`, then put it in `$HOME/.kubemacro` directory for KubeMacro to pick up.
 
 [filename](../bin/get-pod-restarts.sh ':include :type=code shell')
 

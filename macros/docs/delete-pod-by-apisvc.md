@@ -2,7 +2,7 @@
 
 Delete all pods belonging to an API service.
 
-Author: [MorningSpace](https://github.com/morningspace/)
+Author: [morningspace](https://github.com/morningspace/)
 
 <!-- tabs:start -->
 
@@ -40,12 +40,14 @@ kubectl macro delete-pod-by-apisvc v1beta1.certificates.k8s.io --dry-run=client
 
 ### **Dependencies**
 
-* jq
+To run this macro, it requires below dependencies to be installed at first:
+
+* `jq`
 * [delete-pod-by-svc](docs/delete-pod-by-svc.md)
 
 ### **Code**
 
-?> To install this macro, copy the code into a local file and save as `delete-pod-by-apisvc.sh` in `$HOME/.kubemacro`.
+?> To install this macro, you can download it [here](bin/delete-pod-by-apisvc.sh ':ignore delete-pod-by-apisvc'), or copy the following code into a local file named as `delete-pod-by-apisvc.sh`, then put it in `$HOME/.kubemacro` directory for KubeMacro to pick up.
 
 [filename](../bin/delete-pod-by-apisvc.sh ':include :type=code shell')
 

@@ -10,7 +10,7 @@
 #
 # Usually pods restarted many times indicate that they are not healthy and need your further action.
 #
-# @Author: [MorningSpace](https://github.com/morningspace/)
+# @Author: [morningspace](https://github.com/morningspace/)
 # @Usage: kubectl macro get-pod-restarts [options]
 # @Options:
 # @Examples:
