@@ -1,4 +1,4 @@
-## delete-pod-by-svc
+## Macro: delete-pod-by-svc
 
 Delete all pods belonging to a service.
 

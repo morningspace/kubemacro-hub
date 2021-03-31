@@ -1,4 +1,4 @@
-## get-apires-name-dup
+## Macro: get-apires-name-dup
 
 Get all API resources with names duplicated.
 
@@ -13,11 +13,11 @@ Get all API resources with names duplicated
 
 ### **Usage & Options**
 
-#### Usage
+**Usage**
 
 kubectl macro get-apires-name-dup [options]
 
-#### Options
+**Options**
 
 ```
 

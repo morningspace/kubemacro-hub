@@ -1,4 +1,4 @@
-## get-pod-by-svc
+## Macro: get-pod-by-svc
 
 Get all pods belonging to a service.
 
@@ -13,11 +13,11 @@ Get all pods belonging to a service.
 
 ### **Usage & Options**
 
-#### Usage
+**Usage**
 
 kubectl macro get-pod-by-svc (NAME) [options]
 
-#### Options
+**Options**
 
 ```
 

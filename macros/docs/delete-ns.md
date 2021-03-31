@@ -1,4 +1,4 @@
-## delete-ns
+## Macro: delete-ns
 
 Delete a namespace.
 
@@ -16,11 +16,11 @@ https://github.com/kubernetes/kubernetes/issues/60807#issuecomment-572615776
 
 ### **Usage & Options**
 
-#### Usage
+**Usage**
 
 kubectl macro delete-ns (NAME) [options]
 
-#### Options
+**Options**
 
 ```
 

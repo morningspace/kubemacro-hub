@@ -1,4 +1,4 @@
-## get-by-owner-ref
+## Macro: get-by-owner-ref
 
 Get resources by OwnerReferences.
 
@@ -13,11 +13,11 @@ Get resources by OwnerReferences.
 
 ### **Usage & Options**
 
-#### Usage
+**Usage**
 
 kubectl macro get-by-owner-ref [options]
 
-#### Options
+**Options**
 
 ```
 

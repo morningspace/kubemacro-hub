@@ -1,4 +1,4 @@
-## delete-apires
+## Macro: delete-apires
 
 Delete API resources in a namespace.
 

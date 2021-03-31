@@ -1,4 +1,4 @@
-## get-pod-terminating
+## Macro: get-pod-terminating
 
 Get all pods that are terminating.
 
@@ -13,11 +13,11 @@ Get all pods that are terminating.
 
 ### **Usage & Options**
 
-#### Usage
+**Usage**
 
 kubectl macro get-pod-terminating [options]
 
-#### Options
+**Options**
 
 ```
 

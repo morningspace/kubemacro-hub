@@ -1,4 +1,4 @@
-## get-pod-not-ready
+## Macro: get-pod-not-ready
 
 Get all pods that are not ready.
 
@@ -13,11 +13,11 @@ Get all pods that are not ready.
 
 ### **Usage & Options**
 
-#### Usage
+**Usage**
 
 kubectl macro get-pod-not-ready [options]
 
-#### Options
+**Options**
 
 ```
 

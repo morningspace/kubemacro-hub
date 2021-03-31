@@ -1,4 +1,4 @@
-## @Name
+## Macro: @Name
 
 @Summary
 
@@ -10,11 +10,11 @@
 
 ### **Usage & Options**
 
-#### Usage
+**Usage**
 
 @Usage
 
-#### Options
+**Options**
 
 ```
 @Options

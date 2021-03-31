@@ -1,4 +1,4 @@
-## delete-pod-by-apisvc
+## Macro: delete-pod-by-apisvc
 
 Delete all pods belonging to an API service.
 
@@ -13,11 +13,11 @@ Delete all pods belonging to an API service.
 
 ### **Usage & Options**
 
-#### Usage
+**Usage**
 
 kubectl macro delete-pod-by-apisvc (NAME) [options]
 
-#### Options
+**Options**
 
 ```
 

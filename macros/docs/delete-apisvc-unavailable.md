@@ -1,4 +1,4 @@
-## delete-apisvc-unavailable
+## Macro: delete-apisvc-unavailable
 
 Delete all API services that are unavailable.
 
@@ -13,11 +13,11 @@ Delete all API services that are unavailable.
 
 ### **Usage & Options**
 
-#### Usage
+**Usage**
 
 kubectl macro delete-apisvc-unavailable [options]
 
-#### Options
+**Options**
 
 ```
 -y, --assumeyes answer yes for all questions

@@ -1,4 +1,4 @@
-## get-pod-by-apisvc
+## Macro: get-pod-by-apisvc
 
 Get all pods belonging to an API service.
 
@@ -13,11 +13,11 @@ Get all pods belonging to an API service.
 
 ### **Usage & Options**
 
-#### Usage
+**Usage**
 
 kubectl macro get-pod-by-apisvc (NAME) [options]
 
-#### Options
+**Options**
 
 ```
 

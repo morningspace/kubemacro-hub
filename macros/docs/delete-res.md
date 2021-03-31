@@ -1,4 +1,4 @@
-## delete-res
+## Macro: delete-res
 
 Delete resource.
 

@@ -1,4 +1,4 @@
-## get-pod-restarts
+## Macro: get-pod-restarts
 
 Get the pods that the restart number matches specified criteria.
 
@@ -19,11 +19,11 @@ Usually pods restarted many times indicate that they are not healthy and need yo
 
 ### **Usage & Options**
 
-#### Usage
+**Usage**
 
 kubectl macro get-pod-restarts [options]
 
-#### Options
+**Options**
 
 ```
 

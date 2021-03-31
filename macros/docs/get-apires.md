@@ -1,4 +1,4 @@
-## get-apires
+## Macro: get-apires
 
 Get API resources in a namespace.
 
@@ -13,11 +13,11 @@ Get API resources in a namespace.
 
 ### **Usage & Options**
 
-#### Usage
+**Usage**
 
 kubectl macro get-apires [options]
 
-#### Options
+**Options**
 
 ```
 
