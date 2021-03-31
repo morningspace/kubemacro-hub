@@ -2,6 +2,8 @@
 
 Get all API resources with names duplicated.
 
+Author: [MorningSpace](https://github.com/morningspace/)
+
 <!-- tabs:start -->
 
 ### **Description**

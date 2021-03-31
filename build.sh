@@ -33,6 +33,7 @@ function gen_macro_doc {
   local file=$2
   local comment="`sed -n -e "/^#[[:space:]]*@Name:[[:space:]]*$name$/,/^##$/p" $file | sed -e '1d;$d'`"
   local summary="`echo "$comment" | grep '^#[[:space:]]*@Description:[[:space:]]*' | sed -n 's/^#[[:space:]]*@Description:[[:space:]]*//p'`"
+  local author="`echo "$comment" | grep '^#[[:space:]]*@Author:[[:space:]]*' | sed -n 's/^#[[:space:]]*@Author:[[:space:]]*//p'`"
   local usage="`echo "$comment" | grep '^#[[:space:]]*@Usage:[[:space:]]*' | sed -n 's/^#[[:space:]]*@Usage:[[:space:]]*//p'`"
   local dependencies="`echo "$comment" | grep '^#[[:space:]]*@Dependencies:[[:space:]]*' | sed -n 's/^#[[:space:]]*@Dependencies:[[:space:]]*//p'`"
   local description=""
@@ -73,6 +74,10 @@ function gen_macro_doc {
     case $line in
     *@Name*|*@Summary*|*@Usage*)
       echo -e "$line" | sed -e "s/@Name/$name/g" -e "s/@Summary/$summary/g" -e "s/@Usage/$usage/g" >> macros/docs/$name.md
+      ;;
+    *@Author*)
+      author=${author//\//\\/}
+      echo -e "$line" | sed -e "s/@Author/$author/g" >> macros/docs/$name.md
       ;;
     *@Description*)
       echo -e "$description" >> macros/docs/$name.md

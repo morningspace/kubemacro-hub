@@ -2,6 +2,8 @@
 
 Get resources by OwnerReferences.
 
+Author: [MorningSpace](https://github.com/morningspace/)
+
 <!-- tabs:start -->
 
 ### **Description**

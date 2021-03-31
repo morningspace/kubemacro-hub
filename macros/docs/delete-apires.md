@@ -2,6 +2,8 @@
 
 Delete API resources in a namespace.
 
+Author: [MorningSpace](https://github.com/morningspace/)
+
 <!-- tabs:start -->
 
 ### **Description**

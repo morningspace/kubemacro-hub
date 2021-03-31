@@ -4,6 +4,7 @@
 #
 # Get resources by OwnerReferences.
 #
+# @Author: [MorningSpace](https://github.com/morningspace/)
 # @Usage: kubectl macro get-by-owner-ref [options]
 # @Options:
 # @Examples:

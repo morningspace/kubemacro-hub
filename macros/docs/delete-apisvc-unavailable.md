@@ -2,6 +2,8 @@
 
 Delete all API services that are unavailable.
 
+Author: [MorningSpace](https://github.com/morningspace/)
+
 <!-- tabs:start -->
 
 ### **Description**

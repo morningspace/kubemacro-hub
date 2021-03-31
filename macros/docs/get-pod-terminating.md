@@ -2,6 +2,8 @@
 
 Get all pods that are terminating.
 
+Author: [MorningSpace](https://github.com/morningspace/)
+
 <!-- tabs:start -->
 
 ### **Description**

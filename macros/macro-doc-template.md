@@ -2,6 +2,8 @@
 
 @Summary
 
+Author: @Author
+
 <!-- tabs:start -->
 
 ### **Description**

@@ -3,10 +3,12 @@
 # @Description: Delete a namespace.
 #
 # Delete a namespace.
-# Reference:
-#   https://stackoverflow.com/questions/55853312/how-to-force-delete-a-kubernetes-namespace
-#   https://github.com/kubernetes/kubernetes/issues/60807#issuecomment-572615776
 #
+# Reference:
+# - https://stackoverflow.com/questions/55853312/how-to-force-delete-a-kubernetes-namespace
+# - https://github.com/kubernetes/kubernetes/issues/60807#issuecomment-572615776
+#
+# @Author: [MorningSpace](https://github.com/morningspace/)
 # @Usage: kubectl macro delete-ns (NAME) [options]
 # @Options:
 # @Examples:

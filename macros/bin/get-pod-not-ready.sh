@@ -4,6 +4,7 @@
 #
 # Get all pods that are not ready.
 #
+# @Author: [MorningSpace](https://github.com/morningspace/)
 # @Usage: kubectl macro get-pod-not-ready [options]
 # @Options:
 # @Examples:

@@ -4,6 +4,7 @@
 #
 # Get all pods belonging to a service.
 #
+# @Author: [MorningSpace](https://github.com/morningspace/)
 # @Usage: kubectl macro get-pod-by-svc (NAME) [options]
 # @Options:
 # @Examples:

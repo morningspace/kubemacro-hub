@@ -2,6 +2,8 @@
 
 Get all pods belonging to an API service.
 
+Author: [MorningSpace](https://github.com/morningspace/)
+
 <!-- tabs:start -->
 
 ### **Description**

@@ -2,6 +2,8 @@
 
 Get the pods that the restart number matches specified criteria.
 
+Author: [MorningSpace](https://github.com/morningspace/)
+
 <!-- tabs:start -->
 
 ### **Description**

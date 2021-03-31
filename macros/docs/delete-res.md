@@ -2,6 +2,8 @@
 
 Delete resource.
 
+Author: [MorningSpace](https://github.com/morningspace/)
+
 <!-- tabs:start -->
 
 ### **Description**
@@ -10,7 +12,7 @@ Delete resource.
 Delete resource.
 
 Reference:
-https://kubernetes.io/docs/tasks/run-application/force-delete-stateful-set-pod/
+- https://kubernetes.io/docs/tasks/run-application/force-delete-stateful-set-pod/
 
 
 

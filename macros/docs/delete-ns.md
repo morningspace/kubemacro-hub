@@ -2,15 +2,18 @@
 
 Delete a namespace.
 
+Author: [MorningSpace](https://github.com/morningspace/)
+
 <!-- tabs:start -->
 
 ### **Description**
 
 
 Delete a namespace.
+
 Reference:
-https://stackoverflow.com/questions/55853312/how-to-force-delete-a-kubernetes-namespace
-https://github.com/kubernetes/kubernetes/issues/60807#issuecomment-572615776
+- https://stackoverflow.com/questions/55853312/how-to-force-delete-a-kubernetes-namespace
+- https://github.com/kubernetes/kubernetes/issues/60807#issuecomment-572615776
 
 
 
