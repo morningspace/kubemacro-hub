@@ -13,11 +13,11 @@ Delete all pods belonging to a service.
 
 ### **Usage & Options**
 
-#### Usage
+**Usage**
 
 kubectl macro delete-pod-by-svc (NAME) [options]
 
-#### Options
+**Options**
 
 ```
 
@@ -35,7 +35,7 @@ kubectl macro delete-pod-by-svc echo -n default
 
 * jq
 * [get-pod-by-svc](docs/get-pod-by-svc.md)
-* [delete](docs/delete.md)
+* [delete-res](docs/delete-res.md)
 
 ### **Installation**
 

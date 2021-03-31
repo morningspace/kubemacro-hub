@@ -13,11 +13,11 @@ Delete API resources in a namespace.
 
 ### **Usage & Options**
 
-#### Usage
+**Usage**
 
 kubectl macro delete-apires [options]
 
-#### Options
+**Options**
 
 ```
 
@@ -37,7 +37,7 @@ kubectl macro delete-apires --include '^service' --exclude '.*coreos.*|account'
 ### **Dependencies**
 
 * [get-apires](docs/get-apires.md)
-* [delete](docs/delete.md)
+* [delete-res](docs/delete-res.md)
 
 ### **Installation**
 

@@ -12,7 +12,7 @@
 #   # Delete API resources whose names match specified regex in a namespace.
 #   kubectl macro delete-apires --include '^endpoints$|^deployments.*$'
 #   kubectl macro delete-apires --include '^service' --exclude '.*coreos.*|account'
-# @Dependencies: get-apires,delete
+# @Dependencies: get-apires,delete-res
 ##
 function delete-apires {
   process-apires $@ --func delete-apires-instances

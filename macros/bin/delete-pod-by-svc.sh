@@ -9,7 +9,7 @@
 # @Examples:
 #   # Delete pods belonging to service echo in default namespace
 #   kubectl macro delete-pod-by-svc echo -n default
-# @Dependencies: jq,get-pod-by-svc,delete
+# @Dependencies: jq,get-pod-by-svc,delete-res
 ##
 function delete-pod-by-svc {
   local svc=$1
