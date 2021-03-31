@@ -25,6 +25,7 @@ kubectl macro get-apires-name-dup [options]
 
 ### **Examples**
 
+Here are some examples that you can take as reference to understand how to use this macro in practice.
 ```shell
 
 ```
@@ -37,16 +38,9 @@ kubectl macro get-apires-name-dup [options]
 * uniq
 * grep
 
-### **Installation**
-
-To install this macro:
-```shell
-$ kubectl macro install get-apires-name-dup
-```
-
-Alternaltively, you can install it manually by downloading it [here](../bin/get-apires-name-dup.sh), then put into `$HOME/.kubemacro`. KubeMacro will pick up it automatically.
-
 ### **Code**
+
+?> To install this macro, copy the code into a local file and save as `get-apires-name-dup.sh` in `$HOME/.kubemacro`.
 
 [filename](../bin/get-apires-name-dup.sh ':include :type=code shell')
 

@@ -28,6 +28,7 @@ kubectl macro delete-res ([-f FILENAME] | [-k DIRECTORY] | TYPE [(NAME | -l labe
 
 ### **Examples**
 
+Here are some examples that you can take as reference to understand how to use this macro in practice.
 ```shell
 # Delete one or more resources.
 kubectl macro delete-res pod/foo
@@ -42,17 +43,11 @@ kubectl macro delete-res pod echo --force --no-finalizer -n default
 
 ### **Dependencies**
 
-
-### **Installation**
-
-To install this macro:
-```shell
-$ kubectl macro install delete-res
-```
-
-Alternaltively, you can install it manually by downloading it [here](../bin/delete-res.sh), then put into `$HOME/.kubemacro`. KubeMacro will pick up it automatically.
+There is no dependency for this macro.
 
 ### **Code**
+
+?> To install this macro, copy the code into a local file and save as `delete-res.sh` in `$HOME/.kubemacro`.
 
 [filename](../bin/delete-res.sh ':include :type=code shell')
 

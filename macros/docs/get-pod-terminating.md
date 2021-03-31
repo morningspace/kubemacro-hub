@@ -25,6 +25,7 @@ kubectl macro get-pod-terminating [options]
 
 ### **Examples**
 
+Here are some examples that you can take as reference to understand how to use this macro in practice.
 ```shell
 # Get all pods that are terminating in default namespace.
 kubectl macro get-pod-terminating -n default
@@ -43,16 +44,9 @@ kubectl macro get-pod-terminating -l 'app=echo'
 
 * [get-pod-not-ready](docs/get-pod-not-ready.md)
 
-### **Installation**
-
-To install this macro:
-```shell
-$ kubectl macro install get-pod-terminating
-```
-
-Alternaltively, you can install it manually by downloading it [here](../bin/get-pod-terminating.sh), then put into `$HOME/.kubemacro`. KubeMacro will pick up it automatically.
-
 ### **Code**
+
+?> To install this macro, copy the code into a local file and save as `get-pod-terminating.sh` in `$HOME/.kubemacro`.
 
 [filename](../bin/get-pod-terminating.sh ':include :type=code shell')
 

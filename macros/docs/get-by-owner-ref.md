@@ -25,6 +25,7 @@ kubectl macro get-by-owner-ref [options]
 
 ### **Examples**
 
+Here are some examples that you can take as reference to understand how to use this macro in practice.
 ```shell
 # Get pod echo and its parents by navigating OwnerReferences.
 kubectl macro get-by-owner-ref pod echo -n default
@@ -37,16 +38,9 @@ kubectl macro get-by-owner-ref pod -l 'app=echo'
 
 * jq
 
-### **Installation**
-
-To install this macro:
-```shell
-$ kubectl macro install get-by-owner-ref
-```
-
-Alternaltively, you can install it manually by downloading it [here](../bin/get-by-owner-ref.sh), then put into `$HOME/.kubemacro`. KubeMacro will pick up it automatically.
-
 ### **Code**
+
+?> To install this macro, copy the code into a local file and save as `get-by-owner-ref.sh` in `$HOME/.kubemacro`.
 
 [filename](../bin/get-by-owner-ref.sh ':include :type=code shell')
 

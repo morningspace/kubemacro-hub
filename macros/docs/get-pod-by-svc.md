@@ -25,6 +25,7 @@ kubectl macro get-pod-by-svc (NAME) [options]
 
 ### **Examples**
 
+Here are some examples that you can take as reference to understand how to use this macro in practice.
 ```shell
 # Get pods belonging to service echo in default namespace.
 kubectl macro get-pod-by-svc echo -n default
@@ -41,16 +42,9 @@ kubectl macro get-pod-by-svc echo -o name | xargs -t kubectl describe
 
 * jq
 
-### **Installation**
-
-To install this macro:
-```shell
-$ kubectl macro install get-pod-by-svc
-```
-
-Alternaltively, you can install it manually by downloading it [here](../bin/get-pod-by-svc.sh), then put into `$HOME/.kubemacro`. KubeMacro will pick up it automatically.
-
 ### **Code**
+
+?> To install this macro, copy the code into a local file and save as `get-pod-by-svc.sh` in `$HOME/.kubemacro`.
 
 [filename](../bin/get-pod-by-svc.sh ':include :type=code shell')
 

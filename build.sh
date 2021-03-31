@@ -40,6 +40,7 @@ function gen_macro_doc {
   local examples=""
   local parsing
 
+  # Parse annotations
   while IFS= read -r line; do
     [[ $line =~ ^#[[:space:]]*@Description:[[:space:]]* ]] && parsing=Description && continue
     [[ $line =~ ^#[[:space:]]*@Options:[[:space:]]*$ ]] && parsing=Options && continue
@@ -64,8 +65,10 @@ function gen_macro_doc {
     fi
   done <<< "$comment"
 
+  # Clean up the macro doc
   cp /dev/null macros/docs/$name.md
 
+  # Resolve the placeholders
   while IFS= read -r line; do
     case $line in
     *@Name*|*@Summary*|*@Usage*)
@@ -83,13 +86,17 @@ function gen_macro_doc {
     *@Dependencies*)
       local dep deps
       IFS=',' read -a deps <<< "$dependencies"
-      for dep in ${deps[@]}; do
-        if [[ -f macros/bin/$dep.sh ]]; then
-          echo -e "* [$dep](docs/$dep.md)" >> macros/docs/$name.md
-        else
-          echo -e "* $dep" >> macros/docs/$name.md
-        fi
-      done
+      if [[ -n ${deps[@]} ]]; then
+        for dep in ${deps[@]}; do
+          if [[ -f macros/bin/$dep.sh ]]; then
+            echo -e "* [$dep](docs/$dep.md)" >> macros/docs/$name.md
+          else
+            echo -e "* $dep" >> macros/docs/$name.md
+          fi
+        done
+      else
+        echo -e "There is no dependency for this macro." >> macros/docs/$name.md
+      fi
       ;;
     *)
       echo "$line" >> macros/docs/$name.md

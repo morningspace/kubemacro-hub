@@ -25,6 +25,7 @@ kubectl macro get-pod-by-apisvc (NAME) [options]
 
 ### **Examples**
 
+Here are some examples that you can take as reference to understand how to use this macro in practice.
 ```shell
 # Get pods belonging to an API service.
 kubectl macro get-pod-by-apisvc v1beta1.certificates.k8s.io
@@ -42,16 +43,9 @@ kubectl macro get-pod-by-apisvc v1beta1.certificates.k8s.io -o name | xargs -t k
 * jq
 * [get-pod-by-svc](docs/get-pod-by-svc.md)
 
-### **Installation**
-
-To install this macro:
-```shell
-$ kubectl macro install get-pod-by-apisvc
-```
-
-Alternaltively, you can install it manually by downloading it [here](../bin/get-pod-by-apisvc.sh), then put into `$HOME/.kubemacro`. KubeMacro will pick up it automatically.
-
 ### **Code**
+
+?> To install this macro, copy the code into a local file and save as `get-pod-by-apisvc.sh` in `$HOME/.kubemacro`.
 
 [filename](../bin/get-pod-by-apisvc.sh ':include :type=code shell')
 

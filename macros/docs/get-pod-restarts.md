@@ -31,6 +31,7 @@ kubectl macro get-pod-restarts [options]
 
 ### **Examples**
 
+Here are some examples that you can take as reference to understand how to use this macro in practice.
 ```shell
 # Get all pods that did not restart in default namespace.
 kubectl macro get-pod-restarts -eq 0 -n default
@@ -49,16 +50,9 @@ kubectl macro get-pod-restarts -l 'app=echo' -eq 0
 
 * [get-pod-not-ready](docs/get-pod-not-ready.md)
 
-### **Installation**
-
-To install this macro:
-```shell
-$ kubectl macro install get-pod-restarts
-```
-
-Alternaltively, you can install it manually by downloading it [here](../bin/get-pod-restarts.sh), then put into `$HOME/.kubemacro`. KubeMacro will pick up it automatically.
-
 ### **Code**
+
+?> To install this macro, copy the code into a local file and save as `get-pod-restarts.sh` in `$HOME/.kubemacro`.
 
 [filename](../bin/get-pod-restarts.sh ':include :type=code shell')
 

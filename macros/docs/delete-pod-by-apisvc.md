@@ -25,6 +25,7 @@ kubectl macro delete-pod-by-apisvc (NAME) [options]
 
 ### **Examples**
 
+Here are some examples that you can take as reference to understand how to use this macro in practice.
 ```shell
 # Delete pods belonging to an API service.
 kubectl macro delete-pod-by-apisvc v1beta1.certificates.k8s.io
@@ -40,16 +41,9 @@ kubectl macro delete-pod-by-apisvc v1beta1.certificates.k8s.io --dry-run=client
 * jq
 * [delete-pod-by-svc](docs/delete-pod-by-svc.md)
 
-### **Installation**
-
-To install this macro:
-```shell
-$ kubectl macro install delete-pod-by-apisvc
-```
-
-Alternaltively, you can install it manually by downloading it [here](../bin/delete-pod-by-apisvc.sh), then put into `$HOME/.kubemacro`. KubeMacro will pick up it automatically.
-
 ### **Code**
+
+?> To install this macro, copy the code into a local file and save as `delete-pod-by-apisvc.sh` in `$HOME/.kubemacro`.
 
 [filename](../bin/delete-pod-by-apisvc.sh ':include :type=code shell')
 

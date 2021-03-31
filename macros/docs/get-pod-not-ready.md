@@ -25,6 +25,7 @@ kubectl macro get-pod-not-ready [options]
 
 ### **Examples**
 
+Here are some examples that you can take as reference to understand how to use this macro in practice.
 ```shell
 # Get all pods that are not ready in default namespace.
 kubectl macro get-pod-not-ready -n default
@@ -41,17 +42,11 @@ kubectl macro get-pod-not-ready -l 'app=echo'
 
 ### **Dependencies**
 
-
-### **Installation**
-
-To install this macro:
-```shell
-$ kubectl macro install get-pod-not-ready
-```
-
-Alternaltively, you can install it manually by downloading it [here](../bin/get-pod-not-ready.sh), then put into `$HOME/.kubemacro`. KubeMacro will pick up it automatically.
+There is no dependency for this macro.
 
 ### **Code**
+
+?> To install this macro, copy the code into a local file and save as `get-pod-not-ready.sh` in `$HOME/.kubemacro`.
 
 [filename](../bin/get-pod-not-ready.sh ':include :type=code shell')
 

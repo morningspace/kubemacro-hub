@@ -28,6 +28,7 @@ kubectl macro delete-ns (NAME) [options]
 
 ### **Examples**
 
+Here are some examples that you can take as reference to understand how to use this macro in practice.
 ```shell
 # Delete a namespace.
 kubectl macro delete-ns foo
@@ -39,16 +40,9 @@ kubectl macro delete-ns foo
 * tr
 * sed
 
-### **Installation**
-
-To install this macro:
-```shell
-$ kubectl macro install delete-ns
-```
-
-Alternaltively, you can install it manually by downloading it [here](../bin/delete-ns.sh), then put into `$HOME/.kubemacro`. KubeMacro will pick up it automatically.
-
 ### **Code**
+
+?> To install this macro, copy the code into a local file and save as `delete-ns.sh` in `$HOME/.kubemacro`.
 
 [filename](../bin/delete-ns.sh ':include :type=code shell')
 
