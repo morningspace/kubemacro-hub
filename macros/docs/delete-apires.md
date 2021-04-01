@@ -36,7 +36,7 @@ kubectl macro delete-apires --include '^service' --exclude '.*coreos.*|account'
 ```
 
 When delete the resource instance, you can also specify `--force` option to force delete, or use
-`--no-finalizer` option to clear the finalizer of the instance. This is helpful when you got some
+`-F/--no-finalizer` option to clear the finalizer of the instance. This is helpful when you got some
 resource instances stuck in `Terminating` status which prevent them from being deleted with normal
 `kubectl delete`.
 
@@ -58,6 +58,8 @@ kubectl macro delete-apires [options]
  -n, --namespace='': If present, the namespace scope for this CLI request.
  -F, --no-finalizer, clear finalizers of the resources.
      --exclude: Exclude resources to be deleted by specifying a regular expression.
+ -h, --help: Print the help information.
+     --version: Print the version information.
 
 ```
 

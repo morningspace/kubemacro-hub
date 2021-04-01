@@ -29,7 +29,7 @@
 # ```
 #
 # When delete the resource instance, you can also specify `--force` option to force delete, or use
-# `--no-finalizer` option to clear the finalizer of the instance. This is helpful when you got some
+# `-F/--no-finalizer` option to clear the finalizer of the instance. This is helpful when you got some
 # resource instances stuck in `Terminating` status which prevent them from being deleted with normal
 # `kubectl delete`.
 # 
@@ -43,6 +43,8 @@
 #   -n, --namespace='': If present, the namespace scope for this CLI request.
 #   -F, --no-finalizer, clear finalizers of the resources.
 #       --exclude: Exclude resources to be deleted by specifying a regular expression.
+#   -h, --help: Print the help information.
+#       --version: Print the version information.
 # @Examples:
 #   # To delete all API resources in foo namespace.
 #   kubectl macro delete-apires -n foo
