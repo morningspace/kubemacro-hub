@@ -57,7 +57,7 @@ function gen_macro_doc {
       elif [[ $line =~ '${GLOBAL_OPTIONS}' ]]; then
         options+="${GLOBAL_OPTIONS_HELP[@]}\n"
       else
-        options+="`echo $line | sed -n 's/^#[[:space:]]*//p'`\n"
+        options+="`echo "$line" | sed -n 's/^#[[:space:]][[:space:]]//p'`\n"
       fi
     fi
   
