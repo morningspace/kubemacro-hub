@@ -48,7 +48,7 @@ function gen_macro_doc {
     [[ $line =~ ^#[[:space:]]*@Examples:[[:space:]]*$ ]] && parsing=Examples && continue
 
     if [[ $parsing == Description ]] && [[ ! $line =~ ^##$ && ! $line =~ ^#[[:space:]]*@ ]]; then
-      description+="`echo $line | sed -n 's/^#[[:space:]]*//p'`\n"
+      description+="`echo "$line" | sed -n 's/^#[[:space:]]*//p'`\n"
     fi
 
     if [[ $parsing == Options ]] && [[ ! $line =~ ^#$ ]]; then
