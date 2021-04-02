@@ -8,14 +8,29 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/dark.css" />
   <style>
-    .gitter-open-chat-button {
-      background-color: #ea6f5a;
-    }
-    .gitter-open-chat-button:hover {
-      background-color: #ef5238;
-    }
     .sidebar ul li a {
       font-size: 16px;
+    }
+    .sidebar ul li.active>a {
+      color: #01acf5;
+    }
+    .markdown-section a {
+      color: #01acf5;
+    }
+    .markdown-section p.warn {
+      background: rgba(90,161,234,0.1)
+    }
+    button.docsify-copy-code-button {
+      font-size: 0.8em;
+    }
+    .github-corner svg {
+      fill: #3570e3;
+    }
+    .gitter-open-chat-button {
+      background-color: #0a87da;
+    }
+    .gitter-open-chat-button:hover {
+      background-color: #3570e3;
     }
   </style>
 </head>
@@ -37,6 +52,7 @@
   <script src="//unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-yaml.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
   <script src="//unpkg.com/docsify-copy-code@2"></script>
   <script>
