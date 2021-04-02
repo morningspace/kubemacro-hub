@@ -39,7 +39,7 @@ kubectl macro delete-ns (NAME) [options]
 
 Here are some examples that you can take as reference to understand how to use this macro in practice.
 ```shell
-# Delete `foo` namespace.
+# To delete `foo` namespace.
 kubectl macro delete-ns foo
 
 ```

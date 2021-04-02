@@ -18,7 +18,7 @@
 #   -h, --help: Print the help information.
 #       --version: Print the version information.
 # @Examples:
-#   # Delete `foo` namespace.
+#   # To delete `foo` namespace.
 #   kubectl macro delete-ns foo
 # @Dependencies: tr,sed
 ##
