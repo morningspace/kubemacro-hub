@@ -33,6 +33,7 @@
 #   headers).
 #   -o, --output='': Output format. One of:
 #   json|yaml|wide|name|custom-columns=...|custom-columns-file=...|go-template=...|go-template-file=...|jsonpath=...|jsonpath-file=...
+#   -l, --selector='': Selector (label query) to filter on, not including uninitialized ones.
 #       --show-kind=false: If present, list the resource type for the requested object(s).
 #       --show-labels=false: When printing, show all labels as the last column (default hide labels column)
 #       --sort-by='': If non-empty, sort list types using this field specification.  The field specification is expressed
