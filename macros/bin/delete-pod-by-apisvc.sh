@@ -44,7 +44,7 @@
 # ```shell
 # kubectl get svc prometheus-adapter -n openshift-monitoring -oyaml
 # ```
-# In our case, it is the pods that have `name` label with value `prometheus-adapter`:
+# In our case, the pods should have `name` label with value `prometheus-adapter`:
 # ```yaml
 # apiVersion: v1
 # kind: Service
