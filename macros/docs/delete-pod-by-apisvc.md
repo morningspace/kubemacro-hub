@@ -1,6 +1,6 @@
 ## Macro: delete-pod-by-apisvc
 
-Delete all pods belonging to an API service.
+Delete all pods associated with an API service.
 
 Author: [morningspace](https://github.com/morningspace/)
 
@@ -9,7 +9,7 @@ Author: [morningspace](https://github.com/morningspace/)
 ### **Description**
 
 
-This macro can be used to delete all pods that belong to a specified API service. This is useful
+This macro can be used to delete all pods associated with a specified API service. This is useful
 when you have some API services do not function because the pods at the back are failed, and you
 want to force restart these pods.
 
@@ -47,7 +47,7 @@ spec:
 ```
 
 Then, print the Kubernetes service definition and look for `spec.selector`, you will know which pods
-belong to it:
+are associated with it:
 ```shell
 kubectl get svc prometheus-adapter -n openshift-monitoring -oyaml
 ```
@@ -109,11 +109,11 @@ kubectl macro delete-pod-by-apisvc (NAME) [options]
 
 Here are some examples that you can take as reference to understand how to use this macro in practice.
 ```shell
-# To delete pods belonging to an API service.
+# To delete pods associated with an API service.
 kubectl macro delete-pod-by-apisvc v1beta1.metrics.k8s.io
-# To force delete pods belonging to an API service.
+# To force delete pods associated with an API service.
 kubectl macro delete-pod-by-apisvc v1beta1.metrics.k8s.io --force
-# To delete pods belonging to an API service in dryrun mode.
+# To delete pods associated with an API service in dry run mode.
 kubectl macro delete-pod-by-apisvc v1beta1.metrics.k8s.io --dry-run=client
 
 ```

@@ -1,8 +1,8 @@
 ##
 # @Name: delete-pod-by-apisvc
-# @Description: Delete all pods belonging to an API service.
+# @Description: Delete all pods associated with an API service.
 #
-# This macro can be used to delete all pods that belong to a specified API service. This is useful
+# This macro can be used to delete all pods associated with a specified API service. This is useful
 # when you have some API services do not function because the pods at the back are failed, and you
 # want to force restart these pods.
 #
@@ -40,7 +40,7 @@
 # ```
 #
 # Then, print the Kubernetes service definition and look for `spec.selector`, you will know which pods
-# belong to it:
+# are associated with this service:
 # ```shell
 # kubectl get svc prometheus-adapter -n openshift-monitoring -oyaml
 # ```
@@ -88,11 +88,11 @@
 #   -h, --help: Print the help information.
 #       --version: Print the version information.
 # @Examples:
-#   # To delete pods belonging to an API service.
+#   # To delete pods associated with an API service.
 #   kubectl macro delete-pod-by-apisvc v1beta1.metrics.k8s.io
-#   # To force delete pods belonging to an API service.
+#   # To force delete pods associated with an API service.
 #   kubectl macro delete-pod-by-apisvc v1beta1.metrics.k8s.io --force
-#   # To delete pods belonging to an API service in dry run mode.
+#   # To delete pods associated with an API service in dry run mode.
 #   kubectl macro delete-pod-by-apisvc v1beta1.metrics.k8s.io --dry-run=client
 # @Dependencies: jq,delete-pod-by-svc
 ##
@@ -103,9 +103,9 @@ function delete-pod-by-apisvc {
   local res="$(kubectl get apiservices $apisvc -o json)"
   local svc=$(echo $res | jq -r .spec.service.name)
   local ns=$(echo $res | jq -r .spec.service.namespace)
-  [[ -z $svc || -z $ns || $svc == null || $ns == null ]] && echo "No service belonging to API service $apisvc found." >&2 && return 1
+  [[ -z $svc || -z $ns || $svc == null || $ns == null ]] && echo "No service associated with API service $apisvc found." >&2 && return 1
   
-  echo "Found $svc service belonging to API service $apisvc in $ns namespace." >&2
+  echo "Found $svc service associated with API service $apisvc in $ns namespace." >&2
 
   delete-pod-by-svc $svc -n $ns ${@:2}
 }

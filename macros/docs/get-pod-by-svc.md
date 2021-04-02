@@ -1,6 +1,6 @@
 ## Macro: get-pod-by-svc
 
-Get all pods belonging to a service.
+Get all pods associated with a service.
 
 Author: [morningspace](https://github.com/morningspace/)
 
@@ -9,7 +9,7 @@ Author: [morningspace](https://github.com/morningspace/)
 ### **Description**
 
 
-Get all pods belonging to a service.
+Get all pods associated with a service.
 
 
 
@@ -29,9 +29,9 @@ kubectl macro get-pod-by-svc (NAME) [options]
 
 Here are some examples that you can take as reference to understand how to use this macro in practice.
 ```shell
-# Get pods belonging to service echo in default namespace.
+# Get pods associated with service echo in default namespace.
 kubectl macro get-pod-by-svc echo -n default
-# Get pods belonging to service echo in default namespace with output format specified.
+# Get pods associated with service echo in default namespace with output format specified.
 kubectl macro get-pod-by-svc echo -o wide
 kubectl macro get-pod-by-svc echo -o jsonpath='{.items[*].metadata.name}{"
 "}'

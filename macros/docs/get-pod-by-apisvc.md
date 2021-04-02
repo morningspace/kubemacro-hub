@@ -1,6 +1,6 @@
 ## Macro: get-pod-by-apisvc
 
-Get all pods belonging to an API service.
+Get all pods associated with an API service.
 
 Author: [morningspace](https://github.com/morningspace/)
 
@@ -9,7 +9,7 @@ Author: [morningspace](https://github.com/morningspace/)
 ### **Description**
 
 
-Get all pods belonging to an API service.
+Get all pods associated with an API service.
 
 
 
@@ -29,9 +29,9 @@ kubectl macro get-pod-by-apisvc (NAME) [options]
 
 Here are some examples that you can take as reference to understand how to use this macro in practice.
 ```shell
-# Get pods belonging to an API service.
+# Get pods associated with an API service.
 kubectl macro get-pod-by-apisvc v1beta1.certificates.k8s.io
-# Get pods belonging to an API service with output format specified.
+# Get pods associated with an API service with output format specified.
 kubectl macro get-pod-by-apisvc v1beta1.certificates.k8s.io -o wide
 kubectl macro get-pod-by-apisvc v1beta1.certificates.k8s.io -o jsonpath='{.items[*].metadata.name}{"
 "}'

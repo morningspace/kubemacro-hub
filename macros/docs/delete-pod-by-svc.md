@@ -1,6 +1,6 @@
 ## Macro: delete-pod-by-svc
 
-Delete all pods belonging to a service.
+Delete all pods associated with a service.
 
 Author: [morningspace](https://github.com/morningspace/)
 
@@ -9,7 +9,9 @@ Author: [morningspace](https://github.com/morningspace/)
 ### **Description**
 
 
-Delete all pods belonging to a service.
+This macro can be used to delete all pods associated with a specified service. This is useful
+when you have some services do not function because the pods at the back are failed, and you
+want to force restart these pods.
 
 
 
@@ -29,7 +31,7 @@ kubectl macro delete-pod-by-svc (NAME) [options]
 
 Here are some examples that you can take as reference to understand how to use this macro in practice.
 ```shell
-# Delete pods belonging to service echo in default namespace
+# Delete pods associated with service echo in default namespace
 kubectl macro delete-pod-by-svc echo -n default
 
 ```
