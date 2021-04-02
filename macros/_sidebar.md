@@ -11,4 +11,4 @@
 * [get-pod-by-svc](docs/get-pod-by-svc.md)
 * [get-pod-not-ready](docs/get-pod-not-ready.md)
 * [get-pod-restarts](docs/get-pod-restarts.md)
-* [get-pod-terminating](docs/get-pod-terminating.md)
+* [get-pod-status](docs/get-pod-status.md)

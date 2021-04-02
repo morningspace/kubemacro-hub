@@ -9,9 +9,9 @@ Author: [morningspace](https://github.com/morningspace/)
 ### **Description**
 
 
-This macro can be used to find the pods that the restart number matches specified criteria. This
+This macro can be used to get the pods that the restart number matches specified criteria. This
 is useful when you want to quickly figure out which pods are not healthy in a namespace or across
-the cluster based on the assumption that a pod in health should not restart too many times.
+namespaces based on the assumption that a pod in health should not restart too many times.
 
 For example, to list all pods that the restart number is greater than 100 in a namespace:
 ```shell
@@ -21,8 +21,8 @@ kubectl macro get-pod-restarts -gt 100
 All bash-style numeric comparing operators are supported, e.g. `eq`, `gt`, `ge`, `lt`, `le`.
 
 When list the pods, you can also specify `-o/--output` and other options supported by `kubectl get`
-to customize the output format of the returned list since this macro actually calls `kubectl get`
-to get the pods. For example:
+to customize the returned list since this macro actually calls `kubectl get` to get the pods. For
+example:
 ```shell
 kubectl macro get-pod-restarts -ge 1000 -o json
 kubectl macro get-pod-restarts -l 'app=echo' -eq 0
@@ -39,6 +39,8 @@ kubectl macro get-pod-restarts [options]
 **Options**
 
 ```
+ -A, --all-namespaces=false: If present, list the requested object(s) across all namespaces. Namespace in current
+ context is ignored even if specified with --namespace.
  -eq, -lt, -gt, -ge, -le: Check if the actual value is equal to, less than, greater than, no less than, or no greater than expected value.
  -h, --help: Print the help information.
  -n, --namespace='': If present, the namespace scope for this CLI request.
