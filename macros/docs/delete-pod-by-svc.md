@@ -17,7 +17,7 @@ The Kubernetes service is implemented by the corresponding pods. To inspect this
 the service definition and look for `spec.selector` to know which pods are associated with this
 service. Take the following service as an example:
 ```shell
-kubectl get svc prometheus-adapter -n openshift-monitoring -oyaml
+kubectl get svc prometheus-adapter -n openshift-monitoring -o yaml
 ```
 The pods should have `name` label with value `prometheus-adapter`:
 ```yaml

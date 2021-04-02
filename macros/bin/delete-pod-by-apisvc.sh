@@ -20,7 +20,7 @@
 # Print its definition and look for `spec.service` to know which Kubernetes service at the back that
 # implements this API service:
 # ```shell
-# kubectl get apiservice v1beta1.metrics.k8s.io -oyaml
+# kubectl get apiservice v1beta1.metrics.k8s.io -o yaml
 # ```
 # In our case, it is `prometheus-adapter` in `openshift-monitoring` namespace:
 # ```yaml
@@ -42,7 +42,7 @@
 # Then, print the Kubernetes service definition and look for `spec.selector`, you will know which pods
 # are associated with this service:
 # ```shell
-# kubectl get svc prometheus-adapter -n openshift-monitoring -oyaml
+# kubectl get svc prometheus-adapter -n openshift-monitoring -o yaml
 # ```
 # In our case, the pods should have `name` label with value `prometheus-adapter`:
 # ```yaml
