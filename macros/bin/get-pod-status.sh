@@ -70,7 +70,6 @@
 #   kubectl macro get-pod-status -m 'Pending|Completed' -n foo
 #   # To get all pods that pod status matches regular expression with output format specified.
 #   kubectl macro get-pod-status -m 'Running' -o json
-#   kubectl macro get-pod-status -m '.*Error' -A -o name
 #   kubectl macro get-pod-status -m '.*Error' -A -o wide
 #   # To get all pods that match specified labels and are not running.
 #   kubectl macro get-pod-status -ne Running -l 'app=echo'
