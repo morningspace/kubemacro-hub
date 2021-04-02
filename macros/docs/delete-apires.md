@@ -15,7 +15,7 @@ gracefully delete a namespace or a namespace that is stuck in `Terminating` stat
 The normal `kubectl delete` can be used to delete a namespace, but it does not always succeed.
 Sometimes, the namespace can be stuck in `Terminating` status because some API resources in this
 namespace are failed to be deleted. This will ultimately prevent the whole namespace from being
-deleted. This macro can iterate over all API resources that match certain criteria in a namespace,
+deleted. This macro can enumerate all API resources that match certain criteria in a namespace,
 then delete the corresponding instances of each resource. For example, to delete all resources in
 `foo` namespace:
 ```shell
