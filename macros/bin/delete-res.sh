@@ -57,7 +57,7 @@
 #   size of the object
 #       --wait=true: If true, wait for resources to be gone before returning. This waits for finalizers.
 # @Examples:
-#   # Delete one or more resources in a namespace.
+#   # To delete one or more resources in a namespace.
 #   kubectl macro delete-res pod/bar -n foo
 #   kubectl macro delete-res pod/bar pod/baz -n foo
 #   kubectl macro delete-res pods --all -n foo

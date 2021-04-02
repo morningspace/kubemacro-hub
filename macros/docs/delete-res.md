@@ -78,7 +78,7 @@ kubectl macro delete-res ([-f FILENAME] | [-k DIRECTORY] | TYPE [(NAME | -l labe
 
 Here are some examples that you can take as reference to understand how to use this macro in practice.
 ```shell
-# Delete one or more resources in a namespace.
+# To delete one or more resources in a namespace.
 kubectl macro delete-res pod/bar -n foo
 kubectl macro delete-res pod/bar pod/baz -n foo
 kubectl macro delete-res pods --all -n foo

@@ -75,7 +75,7 @@
 #
 # It is very tedious to go through all above steps every time when you need to restart the pods. This
 # macro is aimed to automate the processing by just asking you an API service name. Additionally, when
-# you delete pods, you can also specify options such as `--force`, `--dry-run`, etc. provided by macro
+# you delete pods, you can also specify options such as `--force`, `--dry-run`, etc. supported by macro
 # [delete-res](docs/delete-res) since this macro calls delete-res to do the actual deletion.
 #
 # @Author: [morningspace](https://github.com/morningspace/)

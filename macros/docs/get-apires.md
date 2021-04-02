@@ -34,7 +34,7 @@ And, to list all resources whose names start with `service` but exclude those ha
 kubectl macro get-apires --include '^service' --exclude '.*coreos.*|account'
 ```
 
-When list the resource instances, you can also specify `-o/--output` and other options provided by
+When list the resource instances, you can also specify `-o/--output` and other options supported by
 `kubectl get` to customize the output format of the returned list since this macro actually calls
 `kubectl get` to get the resources. For example:
 ```shell

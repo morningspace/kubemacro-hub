@@ -73,7 +73,7 @@
 #
 # It is very tedious to go through all above steps every time when you need to inspect the pods. This
 # macro is aimed to automate the processing by just asking you an API service name. Additionally, when
-# you inspect pods, you can also specify options such as `-o/--output`, etc. provided by macro 
+# you inspect pods, you can also specify options such as `-o/--output`, etc. supported by macro 
 # [get-pod-by-svc](docs/get-pod-by-svc) since this macro calls get-pod-by-svc to get the pods.
 # You can even pipe the output of this macro with `xargs` for more complicated use case. For example,
 # use `-o name` option to list the pod names then use `kubectl describe` to describe the pods:
