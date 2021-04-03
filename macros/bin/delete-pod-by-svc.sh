@@ -52,8 +52,8 @@
 #       --dry-run='none': Must be "none", "server", or "client". If client strategy, only print the object that would be
 #       --force: Immediately remove resources from API and bypass graceful deletion.
 #   sent, without sending it. If server strategy, submit server-side request without persisting the resource.
-#   -F, --no-finalizer, clear finalizers of the resources.
 #   -h, --help: Print the help information.
+#   -F, --no-finalizer, clear finalizers of the resources.
 #       --version: Print the version information.
 # @Examples:
 #   # To delete pods associated with a service.

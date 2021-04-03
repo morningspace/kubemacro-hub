@@ -58,6 +58,7 @@ kubectl macro delete-res ([-f FILENAME] | [-k DIRECTORY] | TYPE [(NAME | -l labe
  deletion of some resources may result in inconsistency or data loss and requires confirmation.
      --grace-period=-1: Period of time in seconds given to the resource to terminate gracefully. Ignored if negative.
  Set to 1 for immediate shutdown. Can only be set to 0 when --force is true (force deletion).
+ -h, --help: Print the help information.
      --ignore-not-found=false: Treat "resource not found" as a successful delete. Defaults to "true" when --all is
  specified.
  -k, --kustomize='': Process a kustomization directory. This flag can't be used together with -f or -R.
@@ -70,6 +71,7 @@ kubectl macro delete-res ([-f FILENAME] | [-k DIRECTORY] | TYPE [(NAME | -l labe
  -l, --selector='': Selector (label query) to filter on, not including uninitialized ones.
      --timeout=0s: The length of time to wait before giving up on a delete, zero means determine a timeout from the
  size of the object
+     --version: Print the version information.
      --wait=true: If true, wait for resources to be gone before returning. This waits for finalizers.
 
 ```

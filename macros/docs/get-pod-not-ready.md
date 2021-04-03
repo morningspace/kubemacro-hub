@@ -57,10 +57,10 @@ kubectl macro get-pod-not-ready [options]
  must be an integer or a string.
      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The
  template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+     --version: Print the version information.
  -w, --watch=false: After listing/getting the requested object, watch for changes. Uninitialized objects are excluded
  if no object name is provided.
      --watch-only=false: Watch for changes to the requested object(s), without listing/getting first.
-     --version: Print the version information.
 
 ```
 

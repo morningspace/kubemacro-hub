@@ -38,12 +38,12 @@
 # @Options:
 #       --dry-run='none': Must be "none", "server", or "client". If client strategy, only print the object that would be
 #   sent, without sending it. If server strategy, submit server-side request without persisting the resource.
+#       --exclude: Exclude resources to be deleted by specifying a regular expression.
 #       --force: Immediately remove resources from API and bypass graceful deletion.
+#   -h, --help: Print the help information.
 #       --include: Include resources to be deleted by specifying a regular expression.
 #   -n, --namespace='': If present, the namespace scope for this CLI request.
 #   -F, --no-finalizer, clear finalizers of the resources.
-#       --exclude: Exclude resources to be deleted by specifying a regular expression.
-#   -h, --help: Print the help information.
 #       --version: Print the version information.
 # @Examples:
 #   # To delete all API resources in foo namespace.
