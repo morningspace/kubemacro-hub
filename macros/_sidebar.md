@@ -4,7 +4,7 @@
 * [delete-pod-by-apisvc](docs/delete-pod-by-apisvc.md)
 * [delete-pod-by-svc](docs/delete-pod-by-svc.md)
 * [delete-res](docs/delete-res.md)
-* [get-apires-name-dup](docs/get-apires-name-dup.md)
+* [get-apires-name-conflict](docs/get-apires-name-conflict.md)
 * [get-apires](docs/get-apires.md)
 * [get-by-owner-ref](docs/get-by-owner-ref.md)
 * [get-pod-by-apisvc](docs/get-pod-by-apisvc.md)
