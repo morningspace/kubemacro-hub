@@ -64,6 +64,7 @@ function delete-apires-instances {
   local arg_ns=''
   local arg_force=''
   local arg_no_finalizer=''
+  local arg_dry_run=''
   local args=()
 
   while [[ $# -gt 0 ]]; do
@@ -79,8 +80,12 @@ function delete-apires-instances {
     -F|--no-finalizer)
       arg_no_finalizer=$1
       shift ;;
+    --dry-run*)
+      arg_dry_run=$1
+      shift ;;
     *)
-      args+=("$1"); shift;;
+      args+=("$1")
+      shift ;;
     esac
   done
 
@@ -88,7 +93,7 @@ function delete-apires-instances {
   local instance
 
   for instance in $(kubectl get ${args[@]} -o name); do
-    delete-res $instance $arg_ns $arg_force $arg_no_finalizer && (( deleted++ ))
+    delete-res $instance $arg_ns $arg_force $arg_no_finalizer $arg_dry_run && (( deleted++ ))
   done
 
   return $deleted
