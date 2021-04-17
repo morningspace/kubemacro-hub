@@ -27,7 +27,7 @@ function delete-ns {
   [[ -z $ns ]] && echo "You must specify a namespace." >&2 && return 1
 
   # Try delete
-  kubectl delete ns $ns || return 1
+  kubectl delete ns $ns --wait=false || return 1
 
   # Clear finalizer
   echo "Try to clear finalizer for $ns namespace..."
