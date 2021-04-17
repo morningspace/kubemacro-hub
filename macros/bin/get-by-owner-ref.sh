@@ -78,7 +78,8 @@ function get-by-owner-ref {
 
 function do-get-by-owner-ref {
   local pattern=$1
-  local refs="`kubectl get ${@:2} -o jsonpath={.metadata.ownerReferences} 2>/dev/null`"
+  local res="`kubectl get ${@:2} -o json 2>/dev/null`"
+  local refs="`echo $res | jq .metadata.ownerReferences`"
 
   [[ -z $refs ]] && return
 
