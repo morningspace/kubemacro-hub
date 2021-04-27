@@ -127,8 +127,7 @@ function process-apires {
     fi
 
     echo "$apires_processed instance(s) processed." >&2
-    echo >&2
-
+    (( apires_processed > 0 )) && echo || echo >&2
     (( apires_count++ ))
   done
 

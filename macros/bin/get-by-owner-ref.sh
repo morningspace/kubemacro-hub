@@ -81,7 +81,7 @@ function do-get-by-owner-ref {
   local res="`kubectl get ${@:2} -o json 2>/dev/null`"
   local refs="`echo $res | jq .metadata.ownerReferences`"
 
-  [[ -z $refs ]] && return
+  [[ -z $refs || $refs == null ]] && return
 
   local kinds=($(echo "$refs" | jq -r '.[].kind'))
   local names=($(echo "$refs" | jq -r '.[].name'))
