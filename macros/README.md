@@ -1,5 +1,8 @@
-# KubeMacro Hub
+# KubeMacro Hub: The Awesome Kubectl Macros
 ---
+
+![](asserts/kubemacro-hub.png)
+
 ## About KubeMacro and KubeMacro Hub
 
 ?> `KubeMacro` is designed as a kubectl plugin to run kubectl macro (macro for short) that wraps a set of kubectl calls into one command that you can run from the command line as many times as you want. To learn more on KubeMacro, please read its [online documentation](https://morningspace.github.io/kubemacro/docs/).
