@@ -20,6 +20,13 @@
     .markdown-section p.warn {
       background: rgba(90,161,234,0.1)
     }
+    section.cover .cover-main>p:last-child a {
+      border: 1px solid #187ce2;
+      color: var(--theme-color,#187ce2);
+    }
+    section.cover .cover-main>p:last-child a:last-child {
+      background-color: var(--theme-color,#3570e3);
+    }
     button.docsify-copy-code-button {
       font-size: 0.8em;
     }
@@ -41,6 +48,8 @@
       name: 'KubeMacro Hub',
       repo: 'morningspace/kubemacro-hub',
       loadSidebar: true,
+      coverpage: true,
+      onlyCover: true,
       maxLevel: 3,
       pagination: {
         crossChapter: true
