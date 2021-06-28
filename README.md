@@ -1,5 +1,8 @@
 # KubeMacro Hub
 
+[![Gitter](https://badges.gitter.im/morningspace/community.svg)](https://gitter.im/morningspace/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+
 KubeMacro Hub is a central place for people to exchange their awesome kube macros across the Kubernetes community. You can explore the amazing macros created by other people, or share your own cool macros to other people via KubeMacro Hub.
 
 To learn more on KubeMacro Hub, please read [Using KubeMacro Hub](https://morningspace.github.io/kubemacro/docs/#/using-kubemacro-hub) from KubeMacro [online documentation](https://morningspace.github.io/kubemacro/docs/), where you will learn how to explore and install macros hosted on KubeMacro Hub.
